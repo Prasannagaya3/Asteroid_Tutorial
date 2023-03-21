@@ -8,14 +8,12 @@ public class GameplayManager : MonoBehaviour
     public static Camera screenCamera;
     public int asteroidCount, maxCount;
     private float size;
-    private int spawnRandom;
     private void Start()
     {
         screenCamera = Camera.main;
         asteroidCount = 3;
         maxCount = 4;
         gameplay = this;
-        spawnRandom = Random.Range(0, 3);
         AsteroidCreater(2, asteroidCount);
     }
 

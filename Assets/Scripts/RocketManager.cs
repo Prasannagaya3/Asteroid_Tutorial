@@ -30,7 +30,6 @@ public class RocketManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             BullerTriggered();
-            //ResetRocket();
         }
     }
     public void RocketMotion()

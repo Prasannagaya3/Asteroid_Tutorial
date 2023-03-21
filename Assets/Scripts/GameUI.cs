@@ -5,7 +5,7 @@ using TMPro;
 public class GameUI : MonoBehaviour
 {
     public static GameUI UIInstance;
-    public GameObject GameoverUI;
+    public GameObject GameMainUI, GameoverUI;
     public TextMeshProUGUI RocketHealth, GameScoreDisplay;
     private int rocketHealthCount, GameScore;
 
@@ -16,6 +16,8 @@ public class GameUI : MonoBehaviour
         rocketHealthCount = 2;
         GameScore = 0;
         RocketHealth.text = rocketHealthCount.ToString();
+        GameoverUI.SetActive(false);
+        GameMainUI.SetActive(true);
     }
     public void RocketHealthUpdate()
     {
@@ -24,6 +26,7 @@ public class GameUI : MonoBehaviour
         {
             Time.timeScale = 0;
             GameoverUI.SetActive(true);
+            GameMainUI.SetActive(false);
         }
         RocketHealth.text = rocketHealthCount.ToString();
     }
