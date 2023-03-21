@@ -1,14 +1,12 @@
-using System;
 using UnityEngine;
 
-[RequireComponent(typeof (Rigidbody2D))]
+[RequireComponent(typeof (Rigidbody))]
 public class RocketManager : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform bulletSpawnPoint;
-    private Camera screenCamera;
     private GameObject cloneBullet;
-    private Rigidbody2D rocketForce;
+    private Rigidbody rocketForce;
     private float rocketMovementSpeed, rocketRotationSpeed, rocketVelocitySpeed;
 
     private void Start()
@@ -17,8 +15,7 @@ public class RocketManager : MonoBehaviour
         {
             bulletPrefab.SetActive(false);
         }
-        rocketForce = GetComponent<Rigidbody2D>();
-        screenCamera = Camera.main;
+        rocketForce = GetComponent<Rigidbody>();
         rocketMovementSpeed = 5f;
         rocketRotationSpeed = 180f;
         rocketVelocitySpeed = 3f;
@@ -44,8 +41,8 @@ public class RocketManager : MonoBehaviour
     }
     public void ScreenSize()
     {
-        float sceneWidth = screenCamera.orthographicSize * 2 * screenCamera.aspect;
-        float sceneHeight = screenCamera.orthographicSize * 2;
+        float sceneWidth = GameplayManager.screenCamera.orthographicSize * 2 * GameplayManager.screenCamera.aspect;
+        float sceneHeight = GameplayManager.screenCamera.orthographicSize * 2;
 
         float sceneRightEdge = sceneWidth / 2;
         float sceneLeftEdge = sceneRightEdge * -1;

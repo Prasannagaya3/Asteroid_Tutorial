@@ -14,7 +14,7 @@ public class BulletManager : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         // Destroy the bullet when collide with obstacle
-        Destroy(gameObject, 0.1f);
+        Destroy(gameObject);
     }
     private void BulletMotion()
     {

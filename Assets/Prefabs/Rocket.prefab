@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9182499666538223287}
   m_Layer: 6
   m_Name: FiringPoint
-  m_TagString: Untagged
+  m_TagString: Rocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,10 +94,9 @@ GameObject:
   - component: {fileID: 9182499666625276180}
   - component: {fileID: 9182499666625276183}
   - component: {fileID: 9182499666625276182}
-  - component: {fileID: 9182499666625276181}
   m_Layer: 6
   m_Name: Right
-  m_TagString: Untagged
+  m_TagString: Rocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,19 +166,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &9182499666625276181
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9182499666625276179}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9182499666690660169
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,10 +177,9 @@ GameObject:
   - component: {fileID: 9182499666690660170}
   - component: {fileID: 9182499666690660173}
   - component: {fileID: 9182499666690660172}
-  - component: {fileID: 9182499666690660171}
   m_Layer: 6
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Rocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,19 +249,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &9182499666690660171
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9182499666690660169}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.3517153
-  m_Center: {x: 0, y: 0.16350964, z: 0}
 --- !u!1 &9182499666768084929
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,10 +260,9 @@ GameObject:
   - component: {fileID: 9182499666768084930}
   - component: {fileID: 9182499666768084933}
   - component: {fileID: 9182499666768084932}
-  - component: {fileID: 9182499666768084931}
   m_Layer: 6
   m_Name: Base
-  m_TagString: Untagged
+  m_TagString: Rocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -361,19 +332,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &9182499666768084931
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9182499666768084929}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9182499666933534650
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,10 +343,9 @@ GameObject:
   - component: {fileID: 9182499666933534651}
   - component: {fileID: 9182499666933534654}
   - component: {fileID: 9182499666933534653}
-  - component: {fileID: 9182499666933534652}
   m_Layer: 6
   m_Name: Left
-  m_TagString: Untagged
+  m_TagString: Rocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -458,19 +415,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &9182499666933534652
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9182499666933534650}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9182499667576967019
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,8 +424,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9182499667576967022}
-  - component: {fileID: 9182499667576967021}
   - component: {fileID: 9182499667576967020}
+  - component: {fileID: 1957434617}
+  - component: {fileID: 1957434616}
   m_Layer: 6
   m_Name: Rocket
   m_TagString: Rocket
@@ -509,27 +454,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &9182499667576967021
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9182499667576967019}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!114 &9182499667576967020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,3 +468,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2474934358312187878, guid: 8c9e50660f9da0f46a3197a0d456b7f6, type: 3}
   bulletSpawnPoint: {fileID: 9182499666538223285}
+--- !u!54 &1957434617
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9182499667576967019}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!65 &1957434616
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9182499667576967019}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5155041, y: 0.71170497, z: 1}
+  m_Center: {x: 0.0060061812, y: -0.07607786, z: 0}
