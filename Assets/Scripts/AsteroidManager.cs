@@ -26,6 +26,10 @@ public class AsteroidManager : MonoBehaviour
         if(collision.transform.CompareTag("Rocket"))
         {
             GameUI.UIInstance.RocketHealthUpdate();
+            if(GameUI.UIInstance.IsShieldPicked)
+            {
+                GameplayManager.gameplay.DisableShield();
+            }
         }
         if (collision.transform.CompareTag("Bullet"))
         {

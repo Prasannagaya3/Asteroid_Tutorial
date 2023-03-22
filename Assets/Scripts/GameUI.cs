@@ -5,6 +5,7 @@ using TMPro;
 public class GameUI : MonoBehaviour
 {
     public static GameUI UIInstance;
+    public bool IsShieldPicked;
     public GameObject GameMainUI, GameoverUI;
     public TextMeshProUGUI RocketHealth, GameScoreDisplay;
     private int rocketHealthCount, GameScore;
@@ -21,7 +22,11 @@ public class GameUI : MonoBehaviour
     }
     public void RocketHealthUpdate()
     {
-        rocketHealthCount--;
+        if(!IsShieldPicked)
+        {
+            rocketHealthCount--;
+        }
+        
         if(rocketHealthCount == 0)
         {
             Time.timeScale = 0;
